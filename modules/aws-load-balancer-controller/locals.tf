@@ -1,3 +1,3 @@
 locals {
-  oidc = split("/", var.oidc)[4]
+  oidc_provider_url = replace(var.cluster_oidc, "https://", "")
 }
